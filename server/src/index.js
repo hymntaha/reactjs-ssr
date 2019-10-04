@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
         </body>
     </html>
   `;
-  res.send(content);
+  res.send(html);
 });
 
 
