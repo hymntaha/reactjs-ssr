@@ -12,7 +12,7 @@ app.get('*', (req, res) => {
   const store = createStore();
 
   matchRoutes(Routes, req.path).map{(({route}) =>} {
-    route.loadData ? route.loadData() : null;
+    return route.loadData ? route.loadData() : null;
   });
 
   res.send(renderer(req,store));
