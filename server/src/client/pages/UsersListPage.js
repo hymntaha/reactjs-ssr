@@ -36,5 +36,5 @@ function loadData(store){
 
 export default {
   loadData,
-  component: connect(mapStateToProps, {fetchUsers})
-}(UsersListPage);
+  component: connect(mapStateToProps, {fetchUsers})(UsersListPage)
+};

@@ -1,6 +1,6 @@
 import React from "react";
-import HomePage from "./pages/Home";
-import UsersListPage, { loadData } from "./pages/UsersList";
+import HomePage from "./pages/HomePage";
+import UsersListPage from "./pages/UsersListPage";
 
 export default [
   {
