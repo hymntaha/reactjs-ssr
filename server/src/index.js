@@ -27,7 +27,8 @@ app.get("*", (req, res) => {
   });
 
   Promise.all(promises).then(() => {
-    res.send(renderer(req, store));
+    const context = {}
+    res.send(renderer(req, store, context));
   });
 });
 
